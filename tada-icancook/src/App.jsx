@@ -689,7 +689,7 @@ async function handleSaveMealPlanSlot({ day, mealTime, meal }) {
   }
 
   async function handleFavoritesView() {
-    if (!auth.currentUser) {
+    if (!auth.currentUser) {  w
       setAuthModalMode("login");
       showToast("Please log in first to view favorites.", "error");
       return;
